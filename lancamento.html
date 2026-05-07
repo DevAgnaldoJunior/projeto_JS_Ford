@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lançamento</title>
+
+    <link rel="stylesheet" href="css/style/lancamento.css">
+    <link rel="stylesheet" href="css/style/default.css">
+
+    <link rel="stylesheet" href="css/responsive/default_responsive.css">
+    <link rel="stylesheet" href="css/responsive/lancamento_responsive.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="main.html"><img src="img/logo-ford-256.png"></a>
+        </div>
+
+        <nav id="nav">
+            <a href="main.html">Home</a>
+            <a href="lancamento.html">Lançamento</a>
+            <a href="contatos.html">Contato</a>
+        </nav>
+
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+    </header>
+
+    <main>
+        <section class="video-section">
+            <iframe 
+                src="https://www.youtube.com/embed/3J1ccm7D4AM"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+        </section>
+
+        <section class="descricao_ranger">
+        
+            <span>A Ranger Black é uma picape que combina robustez e estilo urbano, com visual totalmente escurecido que reforça sua presença marcante. Equipada para enfrentar tanto o dia a dia na cidade quanto terrenos mais desafiadores, oferece conforto interno, tecnologia moderna e desempenho confiável, sendo uma opção versátil para quem busca força sem abrir mão de sofisticação.</span>
+            <hr>
+        </section>
+
+        
+        <section class="carros">
+
+            <div class="card">
+                <img src="img/XL Cabine.jpg" alt="XL Cabine">
+
+                <div class="info">
+                    <input type="checkbox" checked>
+
+                    <div class="texto">
+                        <span>XL Cabine Simples 2.2 Diesel 4X4 MT 2022</span>
+                        <span class="preco">Preço Sugerido: R$ 183.850</span>
+                    </div>
+
+                    <img src="img/info.png" class="info-img" alt="info">
+                </div>
+            </div>
+
+            
+            <div class="card">
+                <img src="img/xls 2.2 diesel.jpg" alt="XLS">
+
+                <div class="info">
+                    <input type="checkbox">
+
+                    <div class="texto">
+                        <span>XLS 2.2 Diesel 4X4 AT 2022</span>
+                        <span class="preco">Preço Sugerido: R$ 220.690</span>
+                    </div>
+
+                    <img src="img/info.png" class="info-img" alt="info">
+                </div>
+            </div>
+
+        
+            <div class="card">
+                <img src="img/storm.jpg" alt="Storm">
+
+                <div class="info">
+                    <input type="checkbox">
+
+                    <div class="texto">
+                        <span>Storm 3.2 Diesel 4X4 AT 2022</span>
+                        <span class="preco">Preço Sugerido: R$ 222.790</span>
+                    </div>
+
+                    <img src="img/info.png" class="info-img" alt="info">
+                </div>
+            </div>
+
+        </section>
+
+        
+        <div class="btn-container">
+            <button class="btn-comparar">Comparar Carros</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="redes">
+            <span>Redes Sociais</span>
+            <a href="https://www.facebook.com/FordBrasil/" target="_blank"><img src="img\facebook-50.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/fordbrasil/" target="_blank"><img src="img\instagram-logo-50.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com/fordbrasil" target="_blank"><img src="img\youtube-squared-50.png" alt="YouTube"></a>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; Ford Brasil Ltda. Todos os direitos reservados.</p>
+        </div>
+
+        <div class="logo-footer">
+            <img src="img\ford-96.png" alt="Ford Logo">
+        </div>
+    </footer>
+
+
+    <script>
+        const toggle = document.getElementById("menu-toggle");
+        const nav = document.getElementById("nav");
+
+        toggle.addEventListener("click", () => {
+            nav.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>

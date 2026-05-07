@@ -1,0 +1,70 @@
+@media (max-width: 1024px) {
+    .carros {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .descricao_ranger {
+    margin: 20px;
+    font-size: 15px;
+   
+    }
+    .carros {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 50%;
+    }
+    .video-section iframe {
+    height: 150px;
+    
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+
+    .descricao_ranger {
+    
+    font-size: 10px;
+   
+    }
+ 
+
+    .texto span:first-child {
+        font-size: 10px;
+    }
+
+    .preco {
+        font-size: 7px;
+    }
+
+    .info input{
+        transform: scale(1.5);
+        margin-left: 10px;
+    }
+
+    .info .info-img{
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+    }
+    .card {
+    width: 60%;
+    }
+
+    .btn-comparar{
+        padding: 5px 18px;
+        font-size: 10px;
+    }
+
+    .video-section iframe {
+    height: 120px;
+    
+    }
+}

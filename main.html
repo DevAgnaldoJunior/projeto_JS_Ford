@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ford Ranger</title>
+    <link rel="stylesheet" href="css/style/home.css">
+    <link rel="stylesheet" href="css/style/default.css">
+
+    <link rel="stylesheet" href="css/responsive/default_responsive.css">
+    <link rel="stylesheet" href="css/responsive/home_responsive.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="main.html"><img src="img/logo-ford-256.png"></a>
+        </div>
+
+        <nav id="nav">
+            <a href="main.html">Home</a>
+            <a href="lancamento.html">Lançamento</a>
+            <a href="contatos.html">Contato</a>
+        </nav>
+
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+    </header>
+
+    <main>
+        <section class="banner">
+            <a href="lancamento.html"><img src="img\imagem_1.jpg" alt="Ford Ranger"></a>
+        </section>
+
+        <section class="descricao">
+            <p>
+                Esta é a nova Ranger Ford 2022. Verifique novidades <a href="lancamento.html">aqui</a>.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="redes">
+            <span>Redes Sociais</span>
+            <a href="https://www.facebook.com/FordBrasil/" target="_blank"><img src="img\facebook-50.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/fordbrasil/" target="_blank"><img src="img\instagram-logo-50.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com/fordbrasil" target="_blank"><img src="img\youtube-squared-50.png" alt="YouTube"></a>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; Ford Brasil Ltda. Todos os direitos reservados.</p>
+        </div>
+        <div class="logo-footer">
+            <img src="img\ford-96.png" alt="Ford Logo">
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById("menu-toggle");
+        const nav = document.getElementById("nav");
+
+        toggle.addEventListener("click", () => {
+            nav.classList.toggle("active");
+        });
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+

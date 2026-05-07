@@ -1,0 +1,51 @@
+@media (max-width: 1024px) {
+    .contato-box {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .contato-container {
+        padding: 20px 10px;
+    }
+
+    .contato-box {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .contato-img img {
+        width: 100%;
+        max-width: 220px;
+        padding-top: 0;
+    }
+
+    .contato-form {
+        width: 100%;
+        align-items: center;
+    }
+
+    .contato-form input,
+    .contato-form select,
+    .contato-form textarea,
+    .contato-form button {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .contato-form input,
+    .contato-form select,
+    .contato-form textarea,
+    .contato-form button {
+        max-width: 100%;
+    }
+
+    .contato-img img {
+        max-width: 180px;
+    }
+}

@@ -1,0 +1,87 @@
+@media (max-width: 1024px) {
+    header {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    header {
+        position: relative;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: white;
+        width: 100%;
+        padding: 20px;
+        border-left: 1px solid #ccc;
+        z-index: 1000;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 26px;
+        cursor: pointer;
+
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    nav {
+        width: 100%;
+        right: 0;
+    }
+    nav a{
+        font-size: 10px;
+    }
+
+    .menu-toggle {
+        font-size: 22px;
+        right: 15px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    .redes img {
+    width: 20px;
+    
+    }
+
+    .redes span{
+        font-size: 10px;
+        padding-bottom: 5px;
+    }
+
+    .logo-footer img {
+        height: 30px;
+    }
+
+    footer .copyright p{
+    font-size: 10px;
+}
+
+
+
+}

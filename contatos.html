@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lançamento</title>
+
+    <link rel="stylesheet" href="css/style/contatos.css">
+    <link rel="stylesheet" href="css/style/default.css">
+
+    <link rel="stylesheet" href="css/responsive/default_responsive.css">
+    <link rel="stylesheet" href="css/responsive/contatos_responsive.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="main.html"><img src="img/logo-ford-256.png"></a>
+        </div>
+
+        <nav id="nav">
+            <a href="main.html">Home</a>
+            <a href="lancamento.html">Lançamento</a>
+            <a href="contatos.html">Contato</a>
+        </nav>
+
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+    </header>
+
+
+
+    <main class="contato-container">
+        <div class="contato-box">
+
+            <div class="contato-img">
+                <img src="img/xls 2.2 diesel.jpg" alt="Carro">
+            </div>
+
+            <!-- FORMULÁRIO -->
+            <form  class="contato-form">
+                <h3>Sobre Você</h3>
+
+                
+                <input type="text" placeholder="NOME DE USUÁRIO*">
+                <input type="email" placeholder="E-MAIL*">
+                <input type="number" placeholder="TELEFONE*">
+                <select class="select-carro">
+                    <option value="" disabled selected hidden>TIPO DE CONTATO</option>
+                    <option value="xl">ELOGIO</option>
+                    <option value="xls">RECLAMAÇÃO</option>
+                    <option value="storm">SOLICITAÇÃO</option>
+                </select>
+                <textarea class="message" placeholder="MENSAGEM"></textarea>
+
+                <button>Enviar</button>
+            </form >
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        <div class="redes">
+            <span>Redes Sociais</span>
+            <a href="https://www.facebook.com/FordBrasil/" target="_blank"><img src="img\facebook-50.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/fordbrasil/" target="_blank"><img src="img\instagram-logo-50.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com/fordbrasil" target="_blank"><img src="img\youtube-squared-50.png" alt="YouTube"></a>      
+        </div>
+
+        <div class="copyright">
+            <p>&copy; Ford Brasil Ltda. Todos os direitos reservados.</p>
+        </div>
+
+        <div class="logo-footer">
+            <img src="img\ford-96.png" alt="Ford Logo">
+        </div>
+    </footer>
+
+
+    <script>
+        const toggle = document.getElementById("menu-toggle");
+        const nav = document.getElementById("nav");
+
+        toggle.addEventListener("click", () => {
+            nav.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
