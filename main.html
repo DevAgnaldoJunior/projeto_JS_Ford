@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="css/responsive/default_responsive.css">
     <link rel="stylesheet" href="css/responsive/home_responsive.css">
+    <script src="js/carrosel.js"></script>
+
 </head>
 
 <body>
@@ -27,30 +29,32 @@
     </header>
 
     <main>
-        <section class="banner">
-            <a href="lancamento.html"><img src="img\imagem_1.jpg" alt="Ford Ranger"></a>
-        </section>
-
-        <section class="descricao">
-            <p>
-                Esta é a nova Ranger Ford 2022. Verifique novidades <a href="lancamento.html">aqui</a>.
-            </p>
-        </section>
+        <div id="carousel">
+        </div>
+        <div id="carousel-title">
+        </div>
+        <script>
+             //insert each image on carousel
+            carouselArr.push(new Carousel("img/imagem_1.jpg","Esta é a nova Ranger Ford 2022. Verifique novidades.","lancamento.html"));
+            carouselArr.push(new Carousel("img/imagem_2.jpg","Ford a nossa história","lancamento.html"));
+            carouselArr.push(new Carousel("img/imagem_3.jpg","Nova Ford Bronco Sport 2022","lancamento.html"));
+            Carousel.Start(carouselArr);
+        </script>
     </main>
 
     <footer>
         <div class="redes">
             <span>Redes Sociais</span>
-            <a href="https://www.facebook.com/FordBrasil/" target="_blank"><img src="img\facebook-50.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/fordbrasil/" target="_blank"><img src="img\instagram-logo-50.png" alt="Instagram"></a>
-            <a href="https://www.youtube.com/fordbrasil" target="_blank"><img src="img\youtube-squared-50.png" alt="YouTube"></a>
+            <a href="https://www.facebook.com/FordBrasil/" target="_blank"><img src="img/facebook-50.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/fordbrasil/" target="_blank"><img src="img/instagram-logo-50.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com/fordbrasil" target="_blank"><img src="img/youtube-squared-50.png" alt="YouTube"></a>
         </div>
 
         <div class="copyright">
             <p>&copy; Ford Brasil Ltda. Todos os direitos reservados.</p>
         </div>
         <div class="logo-footer">
-            <img src="img\ford-96.png" alt="Ford Logo">
+            <img src="img/ford-96.png" alt="Ford Logo">
         </div>
     </footer>
 
