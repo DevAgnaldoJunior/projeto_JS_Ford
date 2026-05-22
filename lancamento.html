@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" href="css/responsive/default_responsive.css">
     <link rel="stylesheet" href="css/responsive/lancamento_responsive.css">
+    <script src="js/compare.js"></script>
+
 
 </head>
 <body>
@@ -27,6 +29,8 @@
 
         <div class="menu-toggle" id="menu-toggle">☰</div>
     </header>
+
+
 
     <main>
         <section class="video-section">
@@ -50,7 +54,7 @@
                 <img src="img/XL Cabine.jpg" alt="XL Cabine">
 
                 <div class="info">
-                    <input type="checkbox" checked>
+                    <input type="checkbox">
 
                     <div class="texto">
                         <span>XL Cabine Simples 2.2 Diesel 4X4 MT 2022</span>
@@ -99,7 +103,84 @@
         <div class="btn-container">
             <button class="btn-comparar">Comparar Carros</button>
         </div>
+
+        <div id="compare" class="compare-modal">
+            <div class="compare-content">
+
+                <div class="compare-images">
+                    <img id="compare_image_0" src="" alt="Carro 1">
+                    <img id="compare_image_1" src="" alt="Carro 2">
+                </div>
+
+                <table class="compare-table">
+                    <tr>
+                        <td>Modelo</td>
+                        <td id="compare_modelo_0"></td>
+                        <td id="compare_modelo_1"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Altura da caçamba (mm)</td>
+                        <td id="compare_alturaCacamba_0"></td>
+                        <td id="compare_alturaCacamba_1"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Altura do veículo (mm)</td>
+                        <td id="compare_alturaVeiculo_0"></td>
+                        <td id="compare_alturaVeiculo_1"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Altura livre solo (mm)</td>
+                        <td id="compare_alturaSolo_0"></td>
+                        <td id="compare_alturaSolo_1"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Capacidade de carga (kg)</td>
+                        <td id="compare_capacidadeCarga_0"></td>
+                        <td id="compare_capacidadeCarga_1"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Motor</td>
+                        <td id="compare_motor_0"></td>
+                        <td id="compare_motor_1"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Potência (cv)</td>
+                        <td id="compare_potencia_0"></td>
+                        <td id="compare_potencia_1"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Volume de caçamba (L)</td>
+                        <td id="compare_volumeCacamba_0"></td>
+                        <td id="compare_volumeCacamba_1"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Roda</td>
+                        <td id="compare_roda_0"></td>
+                        <td id="compare_roda_1"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Preço</td>
+                        <td id="compare_preco_0"></td>
+                        <td id="compare_preco_1"></td>
+                    </tr>
+                </table>
+
+                <button class="btn-fechar" onclick="HideCompare()">Fechar</button>
+            </div>
+        </div>
+
     </main>
+
+
 
     <footer>
         <div class="redes">

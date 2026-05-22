@@ -13,10 +13,45 @@
         width: 90%;
         font-size: 14px;
     }
+    #carousel-image {
+        min-height: 300px;
+    }
+
+    #carousel-image img {
+        max-width: 100%;
+    }
+
+    #carousel button {
+        font-size: 40px;
+        padding: 10px;
+    }
+
+   
 }
 
 @media (max-width: 480px) {
     .descricao {
         font-size: 10px;
     }
+
+    #carousel-image {
+        min-height: 220px;
+    }
+
+    #carousel-title {
+        margin: 10px 0;
+        padding: 0 10px;
+        font-size: 90%;
+    }
+
+    #carousel-title a {
+        font-size: 0.9rem;
+    }
+    #carousel button {
+        font-size: 30px;
+        padding: 8px;
+    }
+
+    
 }
+

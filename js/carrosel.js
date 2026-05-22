@@ -8,34 +8,76 @@ class Carousel {
     }
 
     static Start(arr) {
+
         Carousel._arr = arr;
         Carousel._sequence = 0;
         Carousel._size = arr.length;
 
-        Carousel.Next();
+        Carousel.Show();
 
-        setInterval(() => {
+        Carousel._interval = setInterval(() => {
             Carousel.Next();
-        }, 5000);
+        }, 3000);
+
+        document.getElementById("next").addEventListener("click", () => {
+            Carousel.Next();
+        });
+
+        document.getElementById("prev").addEventListener("click", () => {
+            Carousel.Prev();
+        });
     }
 
-    static Next() {
+    static Show() {
+
         const item = Carousel._arr[Carousel._sequence];
 
-        console.log("Imagem inserida:", item.image);
-        
-        document.getElementById("carousel").innerHTML = `
+        document.getElementById("carousel-image").innerHTML = `
+            <button id="prev">&#10094;</button>
+
             <a href="${item.link}">
-                <img src="${item.image}" alt="${item.title}" style="width: 500px;">
+                <img src="${item.image}" alt="${item.title}">
             </a>
+
+            <button id="next">&#10095;</button>
         `;
 
-        document.getElementById("carousel-title").innerHTML = item.title;
+        document.getElementById("carousel-title").innerHTML = `
+            <p>
+                ${item.title}
+            </p>
+        `;
+
+        document.getElementById("next").addEventListener("click", () => {
+            Carousel.Next();
+        });
+
+        document.getElementById("prev").addEventListener("click", () => {
+            Carousel.Prev();
+        });
+    }
+
+    
+
+    static Next() {
 
         Carousel._sequence++;
 
         if (Carousel._sequence >= Carousel._size) {
             Carousel._sequence = 0;
         }
+
+        Carousel.Show();
+    }
+
+    static Prev() {
+
+        Carousel._sequence--;
+
+        if (Carousel._sequence < 0) {
+            Carousel._sequence = Carousel._size - 1;
+        }
+
+        Carousel.Show();
     }
 }

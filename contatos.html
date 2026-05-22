@@ -37,24 +37,24 @@
                 <img src="img/xls 2.2 diesel.jpg" alt="Carro">
             </div>
 
-            <!-- FORMULÁRIO -->
-            <form  class="contato-form">
+            <form class="contato-form" onsubmit="Post(this); return false;">
                 <h3>Sobre Você</h3>
 
-                
-                <input type="text" placeholder="NOME DE USUÁRIO*">
-                <input type="email" placeholder="E-MAIL*">
-                <input type="number" placeholder="TELEFONE*">
-                <select class="select-carro">
-                    <option value="" disabled selected hidden>TIPO DE CONTATO</option>
-                    <option value="xl">ELOGIO</option>
-                    <option value="xls">RECLAMAÇÃO</option>
-                    <option value="storm">SOLICITAÇÃO</option>
-                </select>
-                <textarea class="message" placeholder="MENSAGEM"></textarea>
+                <input type="text" id="nomeid" name="nome" placeholder="NOME DE USUÁRIO*">
+                <input type="email" name="email" placeholder="E-MAIL*">
+                <input type="number" name="telefone" placeholder="TELEFONE*">
 
-                <button>Enviar</button>
-            </form >
+                <select class="select-carro" name="contato">
+                    <option value="" disabled selected hidden>TIPO DE CONTATO</option>
+                    <option value="Elogio">ELOGIO</option>
+                    <option value="Reclamação">RECLAMAÇÃO</option>
+                    <option value="Solicitação">SOLICITAÇÃO</option>
+                </select>
+
+                <textarea class="message" name="mensagem" placeholder="MENSAGEM"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
 
         </div>
 
