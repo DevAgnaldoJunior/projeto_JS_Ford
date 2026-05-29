@@ -24,7 +24,8 @@
 
     .contato-form {
         width: 100%;
-        align-items: center;
+        max-width: 280px;
+        align-items: stretch;
     }
 
     .contato-form input,
@@ -34,9 +35,43 @@
         width: 100%;
         max-width: 280px;
     }
+
+     .lgpd-texto,
+    .lgpd-checkbox {
+        max-width: 100%;
+    }
+
+    .lgpd-texto {
+        font-size: 10px;
+    }
+
+    .lgpd-checkbox {
+        font-size: 10px;
+        gap: 6px;
+    }
+
+    .lgpd-checkbox input {
+        width: 12px;
+        height: 12px;
+        min-width: 12px;
+    }
+
+    .contato-img img {
+        max-width: 180px;
+    }
 }
 
+
 @media (max-width: 480px) {
+
+    .contato-container {
+        padding: 15px 10px;
+    }
+
+    .contato-form {
+        width: 100%;
+        max-width: 100%;
+    }
 
     .contato-form input,
     .contato-form select,
@@ -45,7 +80,5 @@
         max-width: 100%;
     }
 
-    .contato-img img {
-        max-width: 180px;
-    }
+
 }

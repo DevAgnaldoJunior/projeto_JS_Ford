@@ -3,12 +3,14 @@
 let contatos = [];
 
 class contato {
-    constructor(nome, email, telefone, tipoContato, mensagem) {
+    constructor(nome, email, telefone, tipoContato, mensagem, aceitouTermos, receberNovidades) {
         this.nome = nome;
         this.email = email;
         this.telefone = telefone;
         this.tipoContato = tipoContato;
         this.mensagem = mensagem;
+        this.aceitouTermos = aceitouTermos;
+        this.receberNovidades = receberNovidades;
     }
 }
 
@@ -19,7 +21,9 @@ function Post(form) {
         form.elements.namedItem("email").value,
         form.elements.namedItem("telefone").value,
         form.elements.namedItem("contato").value,
-        form.elements.namedItem("mensagem").value
+        form.elements.namedItem("mensagem").value,
+        document.getElementById("termos").checked,
+        document.getElementById("novidades").checked
     );
 
     contatos.push(data);
@@ -30,6 +34,7 @@ function Post(form) {
     Enviar();
 
     form.reset();
+    HabilitarEnvio();
 }
 
 function Enviar() {
@@ -40,4 +45,15 @@ function Enviar() {
         alert('Obrigado sr(a) ' + nome.value + ', os seus dados foram encaminhados com sucesso');
     }
 
+}
+
+function HabilitarEnvio() {
+    let termos = document.getElementById("termos");
+    let btnEnviar = document.getElementById("btnEnviar");
+
+    if (termos.checked) {
+        btnEnviar.disabled = false;
+    } else {
+        btnEnviar.disabled = true;
+    }
 }
